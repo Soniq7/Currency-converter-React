@@ -1,8 +1,8 @@
-
+import Container from "./Container";
 
 function App() {
   return (
-    <body class="body">
+    <Container>
     <form class="form js-form">
       <fieldset class="form__fieldset">
         <legend class="form__legend">Currency converter</legend>
@@ -52,7 +52,7 @@ function App() {
         </a>
       </p>
     </div>
-  </body>
+  </Container>
   );
 }
 
