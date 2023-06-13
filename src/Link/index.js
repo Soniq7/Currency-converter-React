@@ -4,8 +4,7 @@ const Link = () => {
   return (
     <div className="link">
       <p>
-        For more currency exchange information please check website:
-        <br />
+        British Pound exchange rates comes from <br />x-rates.com table dated 29-03-2023:<br />
         <a
           className="link__website"
           href="https://www.x-rates.com/table/?from=GBP&amount=1"
