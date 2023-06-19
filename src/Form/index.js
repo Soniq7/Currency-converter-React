@@ -6,6 +6,7 @@ function Form() {
   const [amount, setAmount] = useState("");
   const [currency, setCurrency] = useState("EUR");
   const [result, setResult] = useState(null);
+  const [selectedCurrency, setSelectedCurrency] = useState(null);
 
   const calculateResult = () => {
     const selectedCurrency = currencies.find(
@@ -21,6 +22,7 @@ function Form() {
     event.preventDefault();
     const result = calculateResult();
     setResult(result);
+    setSelectedCurrency(currency);
   };
 
   return (
@@ -52,7 +54,7 @@ function Form() {
               onChange={({ target }) => setCurrency(target.value)}
             >
               {currencies.map((currency) => (
-                <option key={currency.id} value={currency.id}>
+                <option key={currency.id} value={currency.code}>
                   {currency.code} {currency.name}
                 </option>
               ))}
@@ -71,12 +73,12 @@ function Form() {
         <button className="form__button">Convert</button>
       </p>
       <p className="form__result">
-        Result:
+        Result: 
           {result !== null && (
             <>
               {amount} GBP = 
                 <strong>
-                  {result.toFixed(2)} {currency.code}
+                   {result.toFixed(2)} {selectedCurrency}
                 </strong>
             </>
           )}
