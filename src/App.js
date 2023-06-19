@@ -5,9 +5,9 @@ import Link from "./Link";
 function App() {
   return (
     <Container>
-    <Form />
-    <Link />
-  </Container>
+      <Form />
+      <Link />
+    </Container>
   );
 }
 

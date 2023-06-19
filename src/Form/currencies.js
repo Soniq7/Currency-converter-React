@@ -18,7 +18,7 @@ const currencies = [
         code: "USD", 
         name: "US Dollar", 
         rate: 1.228474 
-    }
+    },
 ];
 
 export default currencies;
