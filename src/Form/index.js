@@ -71,14 +71,15 @@ function Form() {
         <button className="form__button">Convert</button>
       </p>
       <p className="form__result">
-        {result !== null && (
-          <>
-            Result: {amount} GBP =
-            <strong>
-              {result.toFixed(2)} {currency.code}
-            </strong>
-          </>
-        )}
+        Result:
+          {result !== null && (
+            <>
+              {amount} GBP = 
+                <strong>
+                  {result.toFixed(2)} {currency.code}
+                </strong>
+            </>
+          )}
       </p>
     </form>
   );
