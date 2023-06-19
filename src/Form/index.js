@@ -9,7 +9,7 @@ function Form() {
 
   const calculateResult = () => {
     const selectedCurrency = currencies.find(
-      (currency) => currency.id === selectedCurrency
+      ({ code }) => code === currency
     );
     if (selectedCurrency) {
       return amount * selectedCurrency.rate;
