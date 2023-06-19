@@ -73,10 +73,10 @@ function Form() {
         <button className="form__button">Convert</button>
       </p>
       <p className="form__result">
-        Result: 
+        Result:{" "}
           {result !== null && (
             <>
-              {amount} GBP = 
+              {amount} GBP ={" "} 
                 <strong>
                    {result.toFixed(2)} {selectedCurrency}
                 </strong>
