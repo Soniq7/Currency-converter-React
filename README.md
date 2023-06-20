@@ -20,7 +20,7 @@ Application allows numbers after the decimal point, only by using "dot".
 
 <br />
 
-![Presentation]()
+![Presentation](https://github.com/Soniq7/Currency-Converter-React/blob/main/public/images/presentation-React.gif?raw=true)
 
 <br />
 
