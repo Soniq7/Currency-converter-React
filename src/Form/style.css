@@ -85,6 +85,8 @@
 .form__result {
     text-align: center;
     border: 1px solid rgba(33, 45, 116, 0.76);
-    border-radius: 0 0 5px 5px;
-    border-top: none;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
 }
