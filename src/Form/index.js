@@ -15,7 +15,7 @@ function Form() {
     if (selectedCurrency) {
       return amount * selectedCurrency.rate;
     }
-    return 0;
+    return null;
   };
 
   const onFormSubmit = (event) => {
@@ -33,7 +33,7 @@ function Form() {
           <label>
             <span className="form__label"> Amount in GBP * :</span>
             <input
-              value={amount}
+              amount={amount}
               onChange={({ target }) => setAmount(target.value)}
               placeholder="Enter amount in GBP"
               className="form__field"
@@ -50,7 +50,7 @@ function Form() {
             <span className="form__label"> Currency : </span>
             <select
               className="form__field"
-              value={currency}
+              currency={currency}
               onChange={({ target }) => setCurrency(target.value)}
             >
               {currencies.map((currency) => (
