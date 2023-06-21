@@ -12,7 +12,8 @@ body {
   font-family: "Montserrat", sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    background-image: url("https://i.postimg.cc/8cX60g7j/pngtree-blue-gradient-stock-currency-creative-synthesis-display-board-esp-background-picture-image-1.png");
+    background-image: url("https://i.postimg.cc/vBLSxDzF/17454.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
  }
