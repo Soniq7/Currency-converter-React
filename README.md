@@ -1,6 +1,6 @@
 # Currency-Converter - React
 
-![Currency-Converter](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWIyNzQ0YzZiOWUyMzFiMTcxNGVkZTI3NGI1ZmY1ZDdkMzMzNjIyNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/TPX9FlvvKtjmXHuSRx/giphy.gif)
+![Currency-Converter](https://i.postimg.cc/QCqWK374/Currency-converter.gif)
 
 <br />
 
