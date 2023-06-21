@@ -6,24 +6,26 @@
 }
 
 .form__legend {
-    background-color: rgba(33, 45, 116, 0.76);
+    background-color: rgb(1, 0, 51);
     color: white;
-    border: 1px solid white;
+    border: 1.75px solid rgb(25, 124, 163);
     border-radius: 5px;     
-    padding: 10px;
+    padding: 10px 50px;
 }
 
 .form__fieldset {
-    border: 1px solid #222;
+    border: 1px solid rgb(1, 0, 51);
     border-radius: 10px; 
-    background-color: rgba(208, 215, 248, 0.596);
+    background-color: rgb(163, 195, 216);
 }
 
 .form__label {
     display: inline-block;
     padding: 10px;
-    max-width: 350px;
+    max-width: 300px;
     width: 100%;
+    font-weight: bold;
+    text-align: right;
 }
 
 @media(max-width: 767px) {
@@ -37,10 +39,11 @@
 
 .form__field {
     border: 1px solid #222;
-    border-radius: 5px;
+    border-radius: 10px;
     max-width: 300px;
     width: 100%;
     padding: 5px;
+    text-align: center;
 }
 
 @media(max-width: 767px) {
@@ -55,38 +58,64 @@
 .form__field--mandatory {
     border: none;
     padding-top: 35px;
-    font-size: 16px;
-    color: rgb(33, 45, 116);
+    font-size: 15px;
     font-weight: bold;
 }
 
 .form__field--pattern {
     border: none;
-    font-size: 16px;
-    color: rgb(33, 45, 116);
+    font-size: 15px;
     font-weight: normal;
     padding: 0px;
 }
 
 .form__button {
-    background-color: rgba(33, 45, 116, 0.76);
+    background-color: rgb(1, 0, 51);
     color: white;
     width: 100%;
-    border: 1px solid white;
+    border: 2px solid rgb(25, 124, 163);
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
 }
 
 .form__button:hover {
-    background-color: rgba(51, 69, 172, 0.76);
+    background-color: rgb(10, 19, 66);
 }
 
 .form__result {
     text-align: center;
-    border: 1px solid rgba(33, 45, 116, 0.76);
-    border-radius: 5px;
+    background-color: rgb(163, 195, 216);
+    border: 1px solid rgb(1, 0, 51);
+    border-radius: 10px;
     padding: 20px;
     width: 100%;
     margin: 0;
+}
+
+.form__result--link {
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+}
+
+.form__result--website {
+    color: rgb(0, 85, 182);
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+}
+
+.form__result--website:visited {
+    color: rgb(15, 1, 120);
+}
+
+.form__result--website:hover {
+    color: rgb(15, 1, 200);
+}
+
+.form__result--website:active {
+    color: rgb(15, 32, 250);
 }
