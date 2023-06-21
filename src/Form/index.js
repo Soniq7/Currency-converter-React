@@ -9,9 +9,7 @@ function Form() {
   const [selectedCurrency, setSelectedCurrency] = useState(null);
 
   const calculateResult = () => {
-    const selectedCurrency = currencies.find(
-      ({ code }) => code === currency
-    );
+    const selectedCurrency = currencies.find(({ code }) => code === currency);
     if (selectedCurrency) {
       return amount * selectedCurrency.rate;
     }
@@ -28,7 +26,7 @@ function Form() {
   return (
     <form className="form" onSubmit={onFormSubmit}>
       <fieldset className="form__fieldset">
-        <legend className="form__legend">Currency converter</legend>
+        <legend className="form__legend">Currency Converter</legend>
         <p>
           <label>
             <span className="form__label"> Amount in GBP * :</span>
@@ -73,15 +71,26 @@ function Form() {
         <button className="form__button">Convert</button>
       </p>
       <p className="form__result">
-        Result:{" "}
-          {result !== null && (
-            <>
-              {amount} GBP ={" "} 
-                <strong>
-                   {result.toFixed(2)} {selectedCurrency}
-                </strong>
-            </>
-          )}
+        {result !== null && (
+          <>
+            {amount} GBP ={" "}
+            <strong>
+              {result.toFixed(2)} {selectedCurrency}
+            </strong>
+          </>
+        )}
+        <span className="form__result form__result--link">
+          <br />
+          British Pound exchange rates come from x-rates.com table dated
+          29-03-2023:
+          <br />
+          <a
+            className="form__result form__result--website"
+            href="https://www.x-rates.com/table/?from=GBP&amount=1"
+          >
+            "BRITISH POUND EXCHANGE RATES TABLE"
+          </a>
+        </span>
       </p>
     </form>
   );
