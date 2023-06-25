@@ -8,11 +8,11 @@ html {
   box-sizing: inherit;
 }
 
-body {
+#root {
   font-family: "Montserrat", sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    background-image: url("https://i.postimg.cc/vBLSxDzF/17454.jpg");
+    background-image: url("background-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
