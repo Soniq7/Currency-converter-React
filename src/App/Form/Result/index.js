@@ -2,7 +2,7 @@ import "./style.css";
 
 export const Result = ({ result }) => (
   <div className="result">
-    <p>
+    <p className="result__amount">
       {result !== null && (
         <>
           {result.sourceAmount.toFixed(2)}&nbsp;GBP&nbsp;={" "}
