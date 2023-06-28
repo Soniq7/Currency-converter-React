@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
+import { Clock } from "./Clock";
 import "./style.css";
 
 export const Form = ({ calculateResult, result }) => {
@@ -16,6 +17,8 @@ export const Form = ({ calculateResult, result }) => {
     <form className="form" onSubmit={onFormSubmit}>
       <fieldset className="form__fieldset">
         <legend className="form__legend">Currency Converter</legend>
+
+        <Clock />
         <p>
           <label>
             <span className="form__label"> Amount in GBP * :</span>
@@ -41,13 +44,8 @@ export const Form = ({ calculateResult, result }) => {
               onChange={({ target }) => setCurrency(target.value)}
             >
               {currencies.map((currency) => (
-                <option 
-                  key={currency.code} 
-                  value={currency.code}
-                >
-                  {currency.code}
-                  {" "}
-                  {currency.name}
+                <option key={currency.code} value={currency.code}>
+                  {currency.code} {currency.name}
                 </option>
               ))}
             </select>
