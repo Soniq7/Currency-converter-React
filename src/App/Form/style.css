@@ -63,9 +63,10 @@
 
 .form__field--mandatory {
     border: none;
-    padding-top: 35px;
+    padding: 35px 5px 20px 5px;
     font-size: 15px;
     font-weight: bold;
+    color: rgb(1, 0, 51);
 }
 
 .form__field--pattern {
