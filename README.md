@@ -20,7 +20,7 @@ Application allows numbers after the decimal point, only by using "dot".
 
 <br />
 
-![Presentation](https://i.postimg.cc/x8kHXNnn/presentation-React.gif)
+![Presentation](https://i.postimg.cc/SRZ30F21/presentation-React.gif)
 
 <br />
 
