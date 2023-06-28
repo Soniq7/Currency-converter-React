@@ -5,13 +5,11 @@
     border-radius: 10px;
     padding: 20px;
     width: 100%;
-    margin: 0;
 }
 
 .result__link {
     font-size: small;
     border: none;
-    padding: 0;
     color: rgb(1, 0, 51);
 }
 
@@ -19,8 +17,6 @@
     color: rgb(0, 85, 182);
     text-decoration: none;
     font-weight: bold;
-    border: none;
-    padding: 0;
 }
 
 .result__link--website:visited {
