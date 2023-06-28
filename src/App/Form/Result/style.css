@@ -10,12 +10,12 @@
 
 .result__link {
     font-size: small;
-    font-weight: bold;
     border: none;
     padding: 0;
+    color: rgb(1, 0, 51);
 }
 
-.result__website {
+.result__link--website {
     color: rgb(0, 85, 182);
     text-decoration: none;
     font-weight: bold;
@@ -23,14 +23,14 @@
     padding: 0;
 }
 
-.fresult__website:visited {
+.result__link--website:visited {
     color: rgb(15, 1, 120);
 }
 
-.result__website:hover {
+.result__link--website:hover {
     color: rgb(15, 1, 200);
 }
 
-.result__website:active {
+.result__link--website:active {
     color: rgb(15, 32, 250);
 }
