@@ -27,7 +27,7 @@ export const Clock = () => {
 
   return (
     <div className="clock">
-      {formatDate(date)}
+      Today is {formatDate(date)}
     </div>
   );
 };
