@@ -13,14 +13,14 @@ export const Result = ({ result }) => (
     )}
     <span className="result__link">
       <br />
-      British Pound exchange rates come from x-rates.com table dated 29-03-2023:
-      <br />
+      British Pound exchange rates come from {" "}
       <a
-        className="result__website"
+        className="result__link--website"
         href="https://www.x-rates.com/table/?from=GBP&amount=1"
       >
-        "BRITISH POUND EXCHANGE RATES TABLE"
-      </a>
+        x-rates.com
+      </a> 
+      {" "} table dated 29-03-2023
     </span>
   </p>
 );
