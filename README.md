@@ -39,7 +39,7 @@ All exchange rates are fixed, based on British Pound exchange rates table (dated
  - Box-sizing 
  - Normalize.css
  - Styled-components 
- - Google fonts, 
+ - Google fonts 
  - Background image 
  - Responsivity
  - Media queries
