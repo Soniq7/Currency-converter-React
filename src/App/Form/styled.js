@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const StyledForm = styled.form`
   margin: 80px auto 100px;
@@ -64,7 +64,7 @@ export const Button = styled.button`
   border: 2px solid rgb(25, 124, 163);
   border-radius: 10px;
   margin: 30px 0 auto;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
 
   &:hover {
