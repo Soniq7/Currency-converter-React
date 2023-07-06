@@ -2,7 +2,14 @@ import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
 import { Clock } from "./Clock";
-import "./style.css";
+import {
+  StyledForm,
+  Fieldset,
+  Legend,
+  LabelContent,
+  Field,
+  Button,
+} from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(currencies[0].code);
@@ -14,19 +21,22 @@ export const Form = ({ calculateResult, result }) => {
   };
 
   return (
-    <form className="form" onSubmit={onFormSubmit}>
-      <fieldset className="form__fieldset">
-        <legend className="form__legend">Currency Converter</legend>
-
+    <StyledForm onSubmit={onFormSubmit}>
+      <Fieldset>
+        <Legend>
+          Currency Converter
+        </Legend>
         <Clock />
         <p>
           <label>
-            <span className="form__label"> Amount in GBP * :</span>
-            <input
+            <LabelContent>
+              Amount in GBP * :
+            </LabelContent>
+            <Field
+              as="input"
               value={amount}
               onChange={({ target }) => setAmount(target.value)}
               placeholder="Enter amount in GBP"
-              className="form__field"
               type="number"
               name="amount"
               required
@@ -37,9 +47,10 @@ export const Form = ({ calculateResult, result }) => {
         </p>
         <p>
           <label>
-            <span className="form__label"> Currency : </span>
-            <select
-              className="form__field"
+            <LabelContent>
+              Currency :
+            </LabelContent>
+            <Field
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
             >
@@ -48,23 +59,17 @@ export const Form = ({ calculateResult, result }) => {
                   {currency.code} {currency.name}
                 </option>
               ))}
-            </select>
+            </Field>
           </label>
         </p>
-        <p className="form__field form__field--mandatory">
-          * Mandatory fields
-          <br />
-          <span className="form__field form__field--pattern">
-            (for float numbers please use dot ".")
-          </span>
+        <p>
+          <Button>
+            Convert
+          </Button>
         </p>
-      </fieldset>
-      <p>
-        <button className="form__button">Convert</button>
-      </p>
-
-      <Result result={result} />
-    </form>
+        <Result result={result} />
+      </Fieldset>
+    </StyledForm>
   );
 };
 
