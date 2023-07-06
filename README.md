@@ -16,11 +16,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Application includes conversion from GBP to EUR, PLN and USD. 
 All exchange rates are fixed, based on British Pound exchange rates table (dated 29th March 2023) from x-rates.com website.
-Application allows numbers after the decimal point, only by using "dot".
 
 <br />
 
-![Presentation](https://i.postimg.cc/SRZ30F21/presentation-React.gif)
+![Presentation](https://i.postimg.cc/cL0v3kxy/presentation-React.gif)
 
 <br />
 
@@ -36,8 +35,14 @@ Application allows numbers after the decimal point, only by using "dot".
 
 ## Techlonolgy used:
 
- - CSS box model, box-sizing, normalize.css, form and links css styling, google fonts, background image, responsivity and media queries
-
+ - Box model
+ - Box-sizing 
+ - Normalize.css
+ - Styled-components 
+ - Google fonts, 
+ - Background image 
+ - Responsivity
+ - Media queries
  - BEM convention
  - Immutability
  - React components
