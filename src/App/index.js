@@ -20,7 +20,8 @@ function App() {
     <Container>
       <Form 
         result={result} 
-        calculateResult={calculateResult} />
+        calculateResult={calculateResult} 
+      />
     </Container>
   );
 }
