@@ -6,11 +6,10 @@ export const StyledResult = styled.div`
 
 export const Wrapper = styled.span`
   font-size: small;
-  border: none;
   color: ${({ theme }) => theme.color.darkNavy};
 `;
 
-export const Link = styled(Wrapper)`
+export const Link = styled.a`
   color: ${({ theme }) => theme.color.lighterBlue};
   text-decoration: none;
   font-weight: bold;
