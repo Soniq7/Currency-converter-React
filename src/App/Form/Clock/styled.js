@@ -5,5 +5,5 @@ export const StyledClock = styled.div`
   font-family: "Martian Mono", monospace;
   font-size: 13px;
   margin: 20px 20px 40px;
-  color: rgb(1, 0, 51);
+  color: ${({ theme }) => theme.color.darkNavy};
 `;

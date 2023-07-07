@@ -5,22 +5,22 @@ export const StyledForm = styled.form`
   max-width: 800px;
   padding: 10px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: grid;
     grid-template-columns: 1fr;
   }
 `;
 
 export const Fieldset = styled.fieldset`
-  border: 1px solid rgb(1, 0, 51);
+  border: 1px solid ${({ theme }) => theme.color.darkNavy};
   border-radius: 10px;
-  background-color: rgb(163, 195, 216);
+  background-color: ${({ theme }) => theme.color.greyBlue};
 `;
 
 export const Legend = styled.legend`
-  background-color: rgb(1, 0, 51);
-  color: white;
-  border: 1.75px solid rgb(25, 124, 163);
+  background-color: ${({ theme }) => theme.color.darkNavy};
+  color: ${({ theme }) => theme.color.white};
+  border: 1.75px solid ${({ theme }) => theme.color.skyBlue};
   border-radius: 5px;
   padding: 10px 50px;
 `;
@@ -33,7 +33,7 @@ export const LabelContent = styled.span`
   font-weight: bold;
   text-align: right;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,14 +42,14 @@ export const LabelContent = styled.span`
 `;
 
 export const Field = styled.select`
-  border: 1px solid #222;
+  border: 1px solid ${({ theme }) => theme.color.lightBlack};
   border-radius: 10px;
   max-width: 300px;
   width: 100%;
   padding: 5px;
   text-align: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -58,16 +58,16 @@ export const Field = styled.select`
 `;
 
 export const Button = styled.button`
-  background-color: rgb(1, 0, 51);
-  color: white;
+  background-color: ${({ theme }) => theme.color.darkNavy};
+  color: ${({ theme }) => theme.color.white};
   width: 100%;
-  border: 2px solid rgb(25, 124, 163);
+  border: 2px solid ${({ theme }) => theme.color.skyBlue};
   border-radius: 10px;
   margin: 30px 0 auto;
   padding: 10px;
   cursor: pointer;
 
   &:hover {
-    background-color: rgb(1, 0, 71);
+    background-color: ${({ theme }) => theme.color.navy};
   }
 `;

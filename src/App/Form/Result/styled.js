@@ -7,24 +7,24 @@ export const StyledResult = styled.div`
 export const Wrapper = styled.span`
   font-size: small;
   border: none;
-  color: rgb(1, 0, 51);
+  color: ${({ theme }) => theme.color.darkNavy};
 `;
 
 export const Link = styled(Wrapper)`
-  color: rgb(0, 85, 182);
+  color: ${({ theme }) => theme.color.lighterBlue};
   text-decoration: none;
   font-weight: bold;
 
   &:visited {
-    color: rgb(15, 1, 120);
+    color: ${({ theme }) => theme.color.lightNavy};
   }
 
   &:hover {
-    color: rgb(15, 1, 200);
+    color: ${({ theme }) => theme.color.blue};
   }
 
   &:active {
-    color: rgb(15, 32, 250);
+    color: ${({ theme }) => theme.color.lightBlue};
   }
 `;
 
