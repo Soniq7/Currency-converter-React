@@ -6,24 +6,24 @@ export const StyledResult = styled.div`
 
 export const Wrapper = styled.span`
   font-size: small;
-  color: ${({ theme }) => theme.color.darkNavy};
+  color: ${({ theme }) => theme.color.stratos};
 `;
 
 export const Link = styled.a`
-  color: ${({ theme }) => theme.color.lighterBlue};
+  color: ${({ theme }) => theme.color.navyBlue};
   text-decoration: none;
   font-weight: bold;
 
   &:visited {
-    color: ${({ theme }) => theme.color.lightNavy};
+    filter: brightness(90%);
   }
 
   &:hover {
-    color: ${({ theme }) => theme.color.blue};
+    filter: brightness(150%);
   }
 
   &:active {
-    color: ${({ theme }) => theme.color.lightBlue};
+    filter: brightness(200%);
   }
 `;
 

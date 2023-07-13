@@ -12,15 +12,15 @@ export const StyledForm = styled.form`
 `;
 
 export const Fieldset = styled.fieldset`
-  border: 1px solid ${({ theme }) => theme.color.darkNavy};
+  border: 1px solid ${({ theme }) => theme.color.stratos};
   border-radius: 10px;
-  background-color: ${({ theme }) => theme.color.greyBlue};
+  background-color: ${({ theme }) => theme.color.pigeonPost};
 `;
 
 export const Legend = styled.legend`
-  background-color: ${({ theme }) => theme.color.darkNavy};
+  background-color: ${({ theme }) => theme.color.stratos};
   color: ${({ theme }) => theme.color.white};
-  border: 1.75px solid ${({ theme }) => theme.color.skyBlue};
+  border: 1.75px solid ${({ theme }) => theme.color.matisse};
   border-radius: 5px;
   padding: 10px 50px;
 `;
@@ -42,7 +42,7 @@ export const LabelContent = styled.span`
 `;
 
 export const Field = styled.select`
-  border: 1px solid ${({ theme }) => theme.color.lightBlack};
+  border: 1px solid ${({ theme }) => theme.color.mineShaft};
   border-radius: 10px;
   max-width: 300px;
   width: 100%;
@@ -58,16 +58,17 @@ export const Field = styled.select`
 `;
 
 export const Button = styled.button`
-  background-color: ${({ theme }) => theme.color.darkNavy};
+  background-color: ${({ theme }) => theme.color.stratos};
   color: ${({ theme }) => theme.color.white};
   width: 100%;
-  border: 2px solid ${({ theme }) => theme.color.skyBlue};
+  border: 2px solid ${({ theme }) => theme.color.matisse};
   border-radius: 10px;
   margin: 30px 0 auto;
   padding: 10px;
   cursor: pointer;
+  transition: filter 0.2s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.color.navy};
+    filter: brightness(130%);
   }
 `;
