@@ -8,6 +8,7 @@ export const theme = {
         endeavour: "#0055b6;",
         white: "#ffffff",
         mineShaft: "#222",
+        brightRed: "#b10000",
     },
     breakpoint: {
         mobileMax: 767,
