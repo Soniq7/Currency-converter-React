@@ -72,3 +72,19 @@ export const Button = styled.button`
     filter: brightness(130%);
   }
 `;
+
+export const Loading = styled.p`
+  color: ${({ theme }) => theme.color.navyBlue};
+  text-align: center;
+`;
+
+export const Error = styled.p`
+  color: ${({ theme }) => theme.color.brightRed};
+  text-align: center;
+`;
+
+export const Wrapper = styled.p`
+  color: ${({ theme }) => theme.color.stratos};
+  font-size: small;
+  text-align: center;
+`;
