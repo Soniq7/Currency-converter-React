@@ -14,12 +14,14 @@ https://soniq7.github.io/Currency-Converter-React/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Application includes conversion from GBP to EUR, PLN and USD. 
-All exchange rates are fixed, based on British Pound exchange rates table (dated 29th March 2023) from x-rates.com website.
+Application includes conversion from GBP (British Pound) to any currency. 
+All current exchange rates are taken from free exchange rates API (sourced directly from the European Commission's databases) using Axios library. 
+Currency Converter app handles errors by using *"try and catch"* method and communicates it to the user by displaying information on app screen.
+
 
 <br />
 
-![Presentation](https://i.postimg.cc/cL0v3kxy/presentation-React.gif)
+![Presentation](https://i.postimg.cc/d0HFCjwN/presentation-React.gif)
 
 <br />
 
@@ -32,6 +34,7 @@ All exchange rates are fixed, based on British Pound exchange rates table (dated
 
 ## Library used:
 - React (Create-React-App dependecies: React, ReactDOM, Webpack, Babel, ESLint, PostCSS etc.)
+- Axios (Promise based HTTP client to handle HTTP requests and responses)
 
 ## Techlonolgy used:
 
@@ -43,6 +46,8 @@ All exchange rates are fixed, based on British Pound exchange rates table (dated
  - Styled-components
  - Theme
  - Custom hook
+ - Error handling (try, catch)
+ - Async / Await functions
  - Responsivity
  - Media queries
  - BEM convention
