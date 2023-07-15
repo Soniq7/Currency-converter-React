@@ -15,7 +15,7 @@ https://soniq7.github.io/Currency-Converter-React/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Application includes conversion from GBP (British Pound) to any currency. 
-All current exchange rates are taken from free exchange rates API (sourced directly from the European Commission's databases) using Axios library. 
+All current exchange rates are taken from free exchange rates API (sourced directly from the European Commission's databases) by using Axios library. 
 Currency Converter app handles errors by using *"try and catch"* method and communicates it to the user by displaying information on app screen.
 
 
