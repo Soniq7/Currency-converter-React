@@ -81,11 +81,13 @@ export const Button = styled.button`
 export const Loading = styled.p`
   color: ${({ theme }) => theme.color.navyBlue};
   text-align: center;
+  padding: 50px 0;
 `;
 
 export const Error = styled.p`
   color: ${({ theme }) => theme.color.brightRed};
   text-align: center;
+  padding: 50px 0;
 `;
 
 export const Wrapper = styled.p`
