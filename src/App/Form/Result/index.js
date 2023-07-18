@@ -1,8 +1,7 @@
-import { StyledResult, Amount } from "./styled";
+import { StyledResult } from "./styled";
 
 export const Result = ({ result }) => (
   <StyledResult>
-    <Amount>
       {result !== null && (
         <>
           {result.sourceAmount.toFixed(2)}&nbsp;GBP&nbsp;={" "}
@@ -11,6 +10,5 @@ export const Result = ({ result }) => (
           </strong>
         </>
       )}
-    </Amount>
   </StyledResult>
 );
