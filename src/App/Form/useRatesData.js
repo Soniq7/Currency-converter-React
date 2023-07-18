@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
+const exchangeRates = "https://api.exchangerate.host/latest?base=GBP";
+
 export const useRatesData = () => {
     const [ratesData, setRatesData] = useState({
         status: "loading",
@@ -9,7 +11,7 @@ export const useRatesData = () => {
     useEffect(() => {
         const getRates = async () => {
             try {
-                const response = await axios.get("https://api.exchangerate.host/latest?base=GBP");
+                const response = await axios.get(exchangeRates);
                 const { rates, date } = await response.data;
 
                 setRatesData({
@@ -28,5 +30,6 @@ export const useRatesData = () => {
         setTimeout(getRates, 2000);
     }, []);
 
+    console.log(ratesData)
     return ratesData;
 };
