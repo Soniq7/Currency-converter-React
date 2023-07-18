@@ -97,7 +97,7 @@ export const Form = () => {
               </p>
               <Wrapper>
                 Exchange rates are taken from the European Central Bank.<br />
-                Rates dated: <strong>{ratesData.date}</strong>
+                Rates dated: <b>{ratesData.date}</b>
               </Wrapper>
               <Result result={result} />
             </>
