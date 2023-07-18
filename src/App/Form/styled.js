@@ -15,6 +15,11 @@ export const Fieldset = styled.fieldset`
   border: 1px solid ${({ theme }) => theme.color.stratos};
   border-radius: 10px;
   background-color: ${({ theme }) => theme.color.pigeonPost};
+  min-height: 530px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    max-height: 100%;
+  }
 `;
 
 export const Legend = styled.legend`
