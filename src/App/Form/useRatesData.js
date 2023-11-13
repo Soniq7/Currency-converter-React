@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
-const exchangeRates = "https://api.exchangerate.host/latest?base=GBP";
+const exchangeRates = "http://api.exchangeratesapi.io/v1/latest?access_key=9c99ed80c76dd9ecb3017aea6aafb48e";
 
 export const useRatesData = () => {
     const [ratesData, setRatesData] = useState({
