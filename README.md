@@ -21,7 +21,7 @@ Currency Converter app handles errors by using *"try and catch"* method and comm
 
 <br />
 
-![Presentation](https://i.postimg.cc/d0HFCjwN/presentation-React.gif)
+![Presentation](https://i.postimg.cc/zBd0GFmL/presentation-React.gif)
 
 <br />
 
