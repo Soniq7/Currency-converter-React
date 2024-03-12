@@ -15,7 +15,7 @@ import {
 } from "./styled";
 
 export const Form = () => {
-  const [currency, setCurrency] = useState("EUR");
+  const [currency, setCurrency] = useState("GBP");
   const [amount, setAmount] = useState("");
   const [result, setResult] = useState(null);
   const ratesData = useRatesData();
@@ -60,12 +60,12 @@ export const Form = () => {
             <>
               <p>
                 <label>
-                  <LabelContent>Amount in GBP * :</LabelContent>
+                  <LabelContent>Amount in EUR * :</LabelContent>
                   <Field
                     as="input"
                     value={amount}
                     onChange={({ target }) => setAmount(target.value)}
-                    placeholder="Enter amount in GBP"
+                    placeholder="Enter amount in EUR"
                     type="number"
                     name="amount"
                     required
